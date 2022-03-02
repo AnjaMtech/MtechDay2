@@ -1,0 +1,48 @@
+body {
+  background-color: #49d;
+}
+
+.checklist {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  min-height: 100vh;
+  margin: auto;
+}
+.checklist .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #38e;
+  margin-bottom: 10px;
+}
+.checklist .item button {
+  width: 50px;
+  height: 50px;
+}
+.checklist .item button.remove {
+  color: #4550CC;
+  background-color: inherit;
+  border: none;
+}
+.checklist .item button.remove:hover {
+  color: #673AAB;
+}
+.checklist #plus-button {
+  position: relative;
+  border-radius: 20px;
+  border: none;
+  background-color: #38e;
+}
+.checklist #plus-button img {
+  width: 75px;
+  height: 75px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #673AAB;
+}
+
+/*# sourceMappingURL=main.css.map */

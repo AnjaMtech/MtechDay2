@@ -1,0 +1,18 @@
+
+Required
+-Users can create any number of To-Do lists and give them a name
+  -Users can create any number of tasks in a list
+  -Users can mark a task as complete.
+  -Users can clear their completed tasks.
+-Users can edit tasks.
+  -Users can delete tasks and lists without needing to complete them first.
+-Use some basic styles to enhance the look of the page.
+  -Use local storage to store all user data (list names, tasks in each list, etc)
+-Well documented Git history for the entire project (+5 points)
+
+Extra Credit:
+-Awesome: Use a CSS library (Bootstrap, Material Design, etc) to style your app (+2 points)
+-Awesome: Deleting tasks and/or clearing all completed tasks/lists is animated (+2 points)
+
+Personal Extra Credit:
+-Has right/left handed options

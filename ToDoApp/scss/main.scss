@@ -1,0 +1,48 @@
+$dark-blue: #38e;
+$deep-blue: #4550CC;
+$purple: #673AAB;
+
+body{
+  background-color: #49d;
+}
+.checklist{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  min-height: 100vh;
+  margin: auto;
+  .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $dark-blue;
+    margin-bottom: 10px;
+    button{
+      width: 50px;
+      height: 50px;
+      &.remove{
+        color: $deep-blue;
+        background-color: inherit;
+        border: none;
+        &:hover{
+          color: $purple;
+        }
+      }
+    }
+  }
+  #plus-button{
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    background-color: $dark-blue;
+    img{
+      width: 75px;
+      height: 75px;
+    }
+  }
+}
+.completed{
+  text-decoration: line-through;
+  color: $purple;
+}
