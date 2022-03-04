@@ -1,5 +1,6 @@
 body {
   background-color: #49d;
+  text-align: center;
 }
 
 .checklist {
@@ -21,13 +22,10 @@ body {
   width: 50px;
   height: 50px;
 }
-.checklist .item button.remove {
-  color: #4550CC;
+.checklist .item button.icon-button {
+  color: #14085b;
   background-color: inherit;
   border: none;
-}
-.checklist .item button.remove:hover {
-  color: #673AAB;
 }
 .checklist #plus-button {
   position: relative;

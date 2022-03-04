@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      window.onload = function(){
+        document.body.onkeypress = function(e){
+          if(e.keyCode === 13){
+            console.log("---Enter keypress works")
+          }
+          if(e.keyCode === 61){
+            console.log("---Plus keypress works")
+          }
+        }
+        document.body.onkeyup = function(e){
+          if(e.keyCode === 13){
+            console.log("---Enter keyup works")
+          }
+          if(e.keyCode === 61){
+            console.log("***But plus keyup does not work")
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Hit the enter or plus key and check the console to test
+  </body>
+</html>

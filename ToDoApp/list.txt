@@ -1,6 +1,6 @@
 
 Required
--Users can create any number of To-Do lists and give them a name
+  -Users can create any number of To-Do lists and give them a name
   -Users can create any number of tasks in a list
   -Users can mark a task as complete.
   -Users can clear their completed tasks.
