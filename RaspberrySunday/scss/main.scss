@@ -69,9 +69,10 @@ section{
 #info-page{
   width: 400px;
   height: 300px;
-  .image-box{
+  #info-image{
     padding: 0;
     border: 3px solid $ter;
+    border-radius: 10px;
     display: flex;
     align-items: baseline;
     height: 150px;

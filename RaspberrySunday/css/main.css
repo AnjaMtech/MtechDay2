@@ -65,15 +65,16 @@ section .img-mini img {
   width: 400px;
   height: 300px;
 }
-#info-page .image-box {
+#info-page #info-image {
   padding: 0;
   border: 3px solid #58A4B0;
+  border-radius: 10px;
   display: flex;
   align-items: baseline;
   height: 150px;
   width: 150px;
 }
-#info-page .image-box img {
+#info-page #info-image img {
   height: 100%;
   width: 100%;
   filter: saturate(100%);
