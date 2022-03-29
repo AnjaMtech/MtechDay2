@@ -1,6 +1,7 @@
 function purr(input, type){
   if(input == undefined){
     console.log("Code is running");
+    return;
   }
 
   if(type == undefined){
