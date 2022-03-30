@@ -1,4 +1,15 @@
 //-----WIP-----
+const coatColors = [
+  "brown",
+  "red brown",
+  "tan",
+  "chocolate",
+  "polished gold"
+]
+const eyeColors = [
+  "cyan",
+  "chocolate"
+]
 // setInterval(loop, 100);
 class AnimalList{
   constructor(){
@@ -6,8 +17,27 @@ class AnimalList{
     this.changeDetector = "blank";
     this.test = "one";
   }
-  add(name, color){
-    // this.list[this.list.length] = [name, color]
+  add(name, coatColor, eyeColor, maneColor){
+    if(name === undefined){
+      name = "testHorse";
+    }
+    if(coatColor === undefined){
+      coatColor = "brown";
+    }
+    if(eyeColor === undefined){
+      eyeColor = "chocolate";
+    }
+    if(maneColor === undefined){
+      maneColor = "black";
+    }
+    this.list[this.list.length] = {name: name, coatColor: coatColor, eyeColor: eyeColor, maneColor: maneColor}
+  }
+  addRandom(){
+    let name = "testHorse";
+    let coatColor = coatColors[Math.floor(Math.random()*coatColors.length)];
+    let eyeColor = eyeColors[Math.floor(Math.random()*eyeColors.length)];
+    let maneColor = coatColors[Math.floor(Math.random()*coatColors.length)];
+    this.list[this.list.length] = {name: name, coatColor: coatColor, eyeColor: eyeColor, maneColor: maneColor}
   }
   content(){
     return this.list;
@@ -28,10 +58,10 @@ class AnimalList{
 
 }
 
-const horses = new AnimalList();
-horses.hasChanged();
 
-setInterval(listManagerLoop, 1000);
+// horses.hasChanged();
+
+// setInterval(listManagerLoop, 1000);
 function listManagerLoop(){
   // purr(horses.hasChanged());
   if(horses.hasChanged()){

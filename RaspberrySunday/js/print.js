@@ -5,7 +5,7 @@ let colorNames = [
   "cyan",
   "white",
   "black"
-]
+];
 
 function printImage(destination, type, theColor){
   if(type == "body"){
@@ -31,6 +31,42 @@ function printImage(destination, type, theColor){
   }else if(theColor === colorNames[0]){
     $(`#editing`).css("filter", `hue-rotate(${000}deg) grayscale(${000}%) brightness(${100}%)`);
   }
+
+  if(theColor === coatColors[0]){
+    $(`#editing`).css("filter", `hue-rotate(${28}deg) grayscale(${60}%) brightness(${130}%)`);
+  }else if(theColor === coatColors[1]){
+    $(`#editing`).css("filter", `hue-rotate(${5}deg) grayscale(${50}%) brightness(${110}%)`);
+  }else if(theColor === coatColors[2]){
+    $(`#editing`).css("filter", `hue-rotate(${15}deg) grayscale(${75}%) brightness(${160}%)`);
+  }else if(theColor === coatColors[3]){
+    $(`#editing`).css("filter", `hue-rotate(${15}deg) grayscale(${75}%) brightness(${90}%)`);
+  }else if(theColor === coatColors[4]){
+    $(`#editing`).css("filter", `hue-rotate(${55}deg) grayscale(${40}%) brightness(${230}%)`);
+  }
   $(`#editing`).removeAttr('id');
+
+}
+
+function displayAnimal(destination, type, array){
+  if(array == undefined){
+    // purr("array given to displayAnimal is not defined. Actual array is:");
+    // purr(array, "o")
+    return;
+  }
+  $(`#${destination}`).empty();
+  printImage(destination, "body", array.coatColor);
+  printImage(destination, "eyes", array.eyeColor);
+  printImage(destination, "mane", array.maneColor);
+}
+
+
+function displayList(list){
+  if(list === undefined){
+    purr(`"ERROR", cannot read undefined in displaylist`);
+    return;
+  }
+  for(let i=0; i<list.length; i++){
+    $("#animal-list").append(`<div class="clickable" id="a${i}">${list[i].name}</div>`);
+  }
 
 }
