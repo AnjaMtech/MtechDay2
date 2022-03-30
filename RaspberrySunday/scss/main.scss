@@ -70,6 +70,9 @@ section{
   width: 400px;
   height: 300px;
   #info-image{
+    position: relative;
+    left: 0;
+    top: 0;
     padding: 0;
     border: 3px solid $ter;
     border-radius: 10px;
@@ -78,6 +81,9 @@ section{
     height: 150px;
     width: 150px;
     img{
+      position:absolute;
+      top: 0px;
+      left: 0px;
       height: 100%;
       width: 100%;
       filter: saturate(100%);

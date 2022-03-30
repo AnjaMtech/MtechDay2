@@ -66,6 +66,9 @@ section .img-mini img {
   height: 300px;
 }
 #info-page #info-image {
+  position: relative;
+  left: 0;
+  top: 0;
   padding: 0;
   border: 3px solid #58A4B0;
   border-radius: 10px;
@@ -75,6 +78,9 @@ section .img-mini img {
   width: 150px;
 }
 #info-page #info-image img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   height: 100%;
   width: 100%;
   filter: saturate(100%);
