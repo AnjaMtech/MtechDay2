@@ -1,6 +1,6 @@
 window.onload = function(){
-  printImage("info-image", "body", "polished gold");
-  printImage("info-image", "eyes", "summer sky");
-  printImage("info-image", "mane", "summer sky");
+  printImage("info-image", "body", "black");
+  printImage("info-image", "eyes", "cyan");
+  printImage("info-image", "mane", "white");
   // colorPicker();
 }
