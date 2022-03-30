@@ -22,6 +22,10 @@ main {
   justify-content: center;
 }
 
+h2 {
+  margin: 0;
+}
+
 section {
   margin: 0 50px;
   border: 2px solid #BD5989;
@@ -29,6 +33,9 @@ section {
   background-color: #FFAFC5;
 }
 section .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: 2px solid #BD5989;
   background-color: #BD5989;
   color: #FFFDED;
@@ -79,9 +86,6 @@ section .img-mini img {
   height: 100%;
 }
 #info-page .flex .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   border-bottom-left-radius: 20px;
 }

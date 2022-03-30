@@ -27,6 +27,9 @@ main{
   display: flex;
   justify-content: center;
 }
+h2{
+  margin: 0;
+}
 section{
   margin: 0 50px;
   border: 2px solid $pri;
@@ -37,11 +40,14 @@ section{
     // align-items: center;
   }
   .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-bottom: 2px solid $pri;
     background-color: $pri;
     color: $light;
     padding: 0 25px;
-    height: 50px;
+    height: 50px
   }
   .clickable{
     background-color: $ter;
@@ -86,9 +92,6 @@ section{
     justify-content: flex-start;
     height: 100%;
     .title{
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 100%;
       border-bottom-left-radius: 20px;
     }
