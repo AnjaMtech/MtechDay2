@@ -28,20 +28,19 @@ section {
   border-radius: 10px;
   background-color: #FFAFC5;
 }
-section div {
-  display: flex;
-  align-items: center;
-  height: 50px;
-}
 section .title {
   border-bottom: 2px solid #BD5989;
+  background-color: #BD5989;
+  color: #FFFDED;
   padding: 0 25px;
+  height: 50px;
 }
 section .clickable {
   background-color: #58A4B0;
   color: #FFFDED;
   border: 3px solid #487087;
   border-radius: 10px;
+  height: 50px;
 }
 section .clickable:hover {
   background-color: #65bac8;
@@ -62,8 +61,29 @@ section .img-mini img {
 }
 
 #info-page {
+  display: flex;
   width: 400px;
   height: 300px;
+}
+#info-page .top {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#info-page .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+#info-page .flex .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom-left-radius: 20px;
 }
 #info-page #info-image {
   position: relative;
@@ -71,6 +91,7 @@ section .img-mini img {
   top: 0;
   padding: 0;
   border: 3px solid #58A4B0;
+  background-color: #fff;
   border-radius: 10px;
   display: flex;
   align-items: baseline;
@@ -83,9 +104,7 @@ section .img-mini img {
   left: 0px;
   height: 100%;
   width: 100%;
-  filter: saturate(100%);
 }
-
 .interface {
   width: 600px;
   height: 300px;
