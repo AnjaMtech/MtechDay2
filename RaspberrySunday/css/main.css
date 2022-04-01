@@ -9,6 +9,7 @@ body {
 }
 
 header {
+  display: flex;
   padding: 25px;
   background-color: #FFAFC5;
 }
@@ -65,6 +66,10 @@ section .img-mini {
 section .img-mini img {
   height: 100%;
   width: 100%;
+}
+
+#animal-list-inner {
+  overflow: scroll;
 }
 
 #info-page {

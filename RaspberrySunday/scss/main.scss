@@ -16,6 +16,7 @@ body{
   color: $dark;
 }
 header{
+  display: flex;
   padding: 25px;
   background-color: $sec;
   h1{
@@ -74,6 +75,9 @@ section{
       width: 100%;
     }
   }
+}
+#animal-list-inner{
+  overflow: scroll;
 }
 #info-page{
   display: flex;

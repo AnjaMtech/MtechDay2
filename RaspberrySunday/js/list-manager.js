@@ -4,12 +4,65 @@ const coatColors = [
   "red brown",
   "tan",
   "chocolate",
-  "polished gold"
-]
+  "polished gold",
+  "white"
+];
 const eyeColors = [
   "cyan",
   "chocolate"
-]
+];
+const wordBank = [
+  "flour",
+  "recession",
+  "tune",
+  "provide",
+  "contradiction",
+  "twist",
+  "give",
+  "injury",
+  "agony",
+  "beat",
+  "provision",
+  "franchise",
+  "post",
+  "public",
+  "biography",
+  "remember",
+  "conspiracy",
+  "constituency",
+  "term",
+  "pie",
+  "slam",
+  "lazy",
+  "promotion",
+  "estimate",
+  "court",
+  "lie",
+  "fast",
+  "snow",
+  "evening",
+  "steak",
+  "contact",
+  "clinic",
+  "vessel",
+  "difficulty",
+  "improvement",
+  "justify",
+  "sign",
+  "struggle",
+  "couple",
+  "pigeon",
+  "distant",
+  "shareholder",
+  "butterfly",
+  "inflation",
+  "helicopter",
+  "debate",
+  "card",
+  "pleasure",
+  "opposed",
+  "mainstream",
+];
 // setInterval(loop, 100);
 class AnimalList{
   constructor(){
@@ -30,14 +83,20 @@ class AnimalList{
     if(maneColor === undefined){
       maneColor = "black";
     }
-    this.list[this.list.length] = {name: name, coatColor: coatColor, eyeColor: eyeColor, maneColor: maneColor}
+    this.list[this.list.length] = {name: name, coatColor: coatColor, eyeColor: eyeColor, maneColor: maneColor};
   }
   addRandom(){
-    let name = "testHorse";
+    let name = `${wordBank[Math.floor(Math.random()*wordBank.length)]} ${wordBank[Math.floor(Math.random()*wordBank.length)]}`;
     let coatColor = coatColors[Math.floor(Math.random()*coatColors.length)];
     let eyeColor = eyeColors[Math.floor(Math.random()*eyeColors.length)];
     let maneColor = coatColors[Math.floor(Math.random()*coatColors.length)];
-    this.list[this.list.length] = {name: name, coatColor: coatColor, eyeColor: eyeColor, maneColor: maneColor}
+    this.list[this.list.length] = {name: name, coatColor: coatColor, eyeColor: eyeColor, maneColor: maneColor};
+    update();
+  }
+  breed(a, b){
+    purr(`Breeding ${a} and ${b}`);
+    this.addRandom();
+    purr(this.list, "o")
   }
   content(){
     return this.list;
