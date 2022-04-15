@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Kaiyako decoder</title>
+      <script type="text/javascript" src=kaiyako.js></script>
+      <link rel="stylesheet" href="main.css">
+   </head>
+
+   <body>
+     <header>
+       <h1 class="kai">hqbqhf</h1>
+       <select name="code" id="code">
+         <option value="full">Full Translation</option>
+         <option value="Kai-ro">Kaiyako to roman</option>
+         <option value="opt">Optimized</option>
+         <option value="Kai-pho">Kaiyako to phonetic</option>
+      </select>
+     </header>
+     <div class="left">
+      <form action = "/cgi-bin/hello_get.cgi" method = "get">
+       Enter Kaiyako here
+       <br>
+       <!-- <textarea id="input" rows="20" cols="150" value="hi" name="description">&#9;n. dac 'qhd eg; . tpowj -kiw.l .k . ,qwlxlt vpvc ]x[/ n. rol mpxa 'ocj cqwe ufa --yibzus/ </textarea><br> -->
+       <textarea id="input" rows="20" cols="150" value="hi" name="description">&#9;</textarea><br>
+       <button type="button" name="button" onclick="decode()">decode</button>
+       <!-- <button type="button" name="button" onclick="debug()">debug</button> -->
+      </form>
+     </div>
+     <div class="right">
+       <!-- <textarea id="english" rows="20" cols="150" value="hi" name="description"></textarea><br> -->
+
+       <p id="output"><span></span></p>
+       <button type="button" name="button" onclick="copyText()">Copy</button>
+     </div>
+
+   </body>
+</html>

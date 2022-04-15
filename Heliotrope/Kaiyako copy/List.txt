@@ -1,0 +1,1 @@
+-Only decode the last word of the sentence if another character is added, do not decode entire input for every tiny change.

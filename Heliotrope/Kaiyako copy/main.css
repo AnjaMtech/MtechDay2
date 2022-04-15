@@ -1,0 +1,49 @@
+@font-face {
+  /* font-family: 'kaiyako1'; /*a name to be used later*/
+  /* src: url('Kaiyako03-Regular.otf'); /*URL to font*/
+}
+@font-face{
+  font-family: 'kaiyako2'; /*a name to be used later*/
+  src: url('Kaiyako05-Regular.otf'); /*URL to font*/
+}
+*{
+  text-align: center;
+  margin: 0;
+}
+textarea{text-align: left;}
+textarea#input{
+  font-family: 'kaiyako2';
+  width: 50em;
+}
+#output{
+  text-align: left;
+}
+.kai{
+  font-family: 'kaiyako2';
+}
+#font-test{
+  font-family: 'kaiyako2';
+}
+
+body{
+  display: grid;
+  grid-template-areas:
+  'header header'
+  'left right';
+  grid-template-rows: 75px auto;
+  grid-template-columns: 50% auto;
+  background-color: #6da;
+}
+header{
+  grid-area: header;
+  background-color: white;
+}
+.left{
+  grid-area: left;
+  /* background-color: blue; */
+}
+.right{
+  grid-area: right;
+  background-color: #5aa;
+  /* background-color: red; */
+}
