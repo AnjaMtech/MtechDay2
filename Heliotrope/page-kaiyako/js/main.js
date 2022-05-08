@@ -9,6 +9,8 @@ const myCode = [
   ["i", "ih"],
   ["o", "eh"],
   ["p", "r"],
+  ["[", "b"],
+  ["]", "0"],
   ["a", "m"],
   ["s", "ktl"],
   ["d", "s"],
@@ -43,14 +45,7 @@ function count(){
 
 window.onload = function(){
   textAreaInput = $("#input").val();
-  setInterval(loop, 2000);
-  function loop(){
-    if(textAreaInput !== $("#input").val()){
-      textAreaInput = $("#input").val();
-      hasChanged();
-    }
-
-  }
+  print(decode($("#input").val()));
   setInterval(loop, 200);
   function loop2(){
     //-----WIP-----
@@ -66,10 +61,23 @@ window.onload = function(){
   }
 }
 
+function loop(){
+  if(textAreaInput !== $("#input").val()){
+    textAreaInput = $("#input").val();
+    hasChanged("textarea");
+  }else if(decodeToggler !== document.getElementById("decode-toggler").checked){
+    hasChanged()
+    decodeToggler = document.getElementById("decode-toggler").checked;
+  }
+
+}
 //-----WIP-----
 function hasChanged(){
   lastChar = textAreaInput.charAt(textAreaInput.length - 1);
-  print(decode($("#input").val()));
+  if(document.getElementById("decode-toggler").checked){
+    print(decode($("#input").val()));
+
+  }
   log(`loop ${loopCount}`, "s");
 }
 //-----/WIP-----
