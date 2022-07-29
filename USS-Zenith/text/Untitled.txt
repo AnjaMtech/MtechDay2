@@ -1,22 +1,24 @@
-Escorial
-Vengeance
-Legacy
-Aurora
-Etherium
-Cydonia
-
 
 ---Species---
+-Common
 Human
 Vulcan
 Klingon
 Andorian
+Caitian
+Orions
+
+-Uncommon
+Betazoid
+Bolian
+Orions
 
 -Unique:
-Orions
 Changeling
 Trill
 Romulan
+Former borg
+
 
 
 ---Plots---
@@ -33,18 +35,10 @@ Alien Creature attacking the ship
 
 
 ---Classes---
-Barbarian   /     -
-Bard        /     -
-Cleric      /     -
-Druid       /     -
-Fighter     /     Security
-Monk        /     -
-Paladin     /     Command
-Ranger      /     -
-Rogue       /     -
-Sorcerer    /     -
-Warlock     /     -
-Wizard      /     Scientist
+Security
+Command
+Scientist
+Medical
 
 ---Skills---
   common
@@ -52,10 +46,24 @@ Combat
 Piloting
 First aid
 Computer specialist
-Language / communication
+Communication
 
   unique skills
 Psychology
 Horse riding
 Cooking
 Plants
+
+
+
+
+
+
+
+
+
+
+
+
+
+-
