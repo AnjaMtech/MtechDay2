@@ -1,0 +1,76 @@
+$main-background: #222;
+$purple: #74b;
+$sheet-width: 500px;
+$line-w: 3px;
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $main-background;
+  color: white;
+}
+
+header{
+  background-color: #74b;
+  padding: 5px;
+  h1{
+    margin: 0;
+  }
+}
+main{
+  background-color: $main-background;
+  flex: auto;
+}
+footer{
+  background-color: #000;
+
+  //Temporary
+  min-height: 100px;
+  min-width: 100px;
+}
+
+img{
+  //Temporary
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.character-sheet{
+  background: url("../images/paper-texture.jpg");
+  width: $sheet-width;
+  height: $sheet-width * 1.1;
+  margin: $line-w auto;
+  background-color: white;
+  border: $line-w solid $purple;
+  border-radius: 15px;
+  color: black;
+  // overflow: hidden;
+  .inner{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow-y: scroll;
+    background-color: #ddd5;
+    div{
+      padding: 20px;
+    }
+  }
+}
+.top{
+  background-color: $purple;
+  color: white;
+  h2{
+    margin: 0;
+  }
+}
+
+.temp{
+  background-color: #f22;
+  border: 5px solid #f22;
+}
+
+//temp
+div{
+  // border: 1px dashed yellow
+}

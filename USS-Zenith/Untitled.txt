@@ -1,0 +1,61 @@
+Escorial
+Vengeance
+Legacy
+Aurora
+Etherium
+Cydonia
+
+
+---Species---
+Human
+Vulcan
+Klingon
+Andorian
+
+-Unique:
+Orions
+Changeling
+Trill
+Romulan
+
+
+---Plots---
+Salt vampire/impostor
+Missing crewman on planet
+Espianoge
+Mirrorverse
+Giant spaceship/alien
+Creature infestation
+Captured by aliens
+Meet a Q
+Beaming down to primitive culture
+Alien Creature attacking the ship
+
+
+---Classes---
+Barbarian   /     -
+Bard        /     -
+Cleric      /     -
+Druid       /     -
+Fighter     /     Security
+Monk        /     -
+Paladin     /     Command
+Ranger      /     -
+Rogue       /     -
+Sorcerer    /     -
+Warlock     /     -
+Wizard      /     Scientist
+
+---Skills---
+  common
+Combat
+Piloting
+First aid
+Computer specialist
+Language / communication
+
+  unique skills
+Psychology
+Horse riding
+Cooking
+Plants
