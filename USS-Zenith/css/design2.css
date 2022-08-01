@@ -1,8 +1,17 @@
-
+*{
+  font-family: "arial", sans-serif;
+}
+.error{
+  color: red;
+}
+.output{
+  font-family: monospace;
+  font-size: 15px;
+}
 
 .character-sheet{
   border: 1px solid purple;
-  margin: auto;
+  margin: 25px auto;
   max-width: 1000px;
   /* width: 400px; */
 }
@@ -21,7 +30,10 @@ ul li:last-child{
 
 .top{
   display: flex;
+  min-height: 80px;
   justify-content: space-between;
+  background-color: #527;
+  color: #fff;
 }
 .top-left{
   flex: 1;
@@ -34,17 +46,28 @@ ul li:last-child{
 }
 .top-right{
   flex: 3;
+  padding: 0 25px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   background-color: #ccc;
 }
-.top-right div{
-  padding: 0px 15px;
-  margin: 5px 5px;
-  /* text-decoration: underline; */
-  background-color: #eee;
+.top-right .category{
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  border: 2px solid #eee;
+  border-radius: 3px;
+  color: #527;
+  /* border-radius: 3px; */
 }
-
+.top-right .category-name{
+  background-color: #eee;
+  padding: 5px;
+}
+.top-right span{
+  padding: 5px;
+}
 
 
 .ability-scores{
@@ -54,22 +77,26 @@ ul li:last-child{
   padding: 20px 0;
 }
 .ability-score{
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   /* padding-top: 35px; */
   background-color: purple;
-  /* height: ; */
-  width: 1%;
+  /* height: 20px; */
+  width: 8%;
   font-size: 100%;
   background: url("../images/ability-score-box.png");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.ability-score span{
+.ability-score span:first-child{
   margin-top: 40%;
   font-size: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
 }
 .ability-score span:last-child{
   margin-top: 50%;
@@ -98,7 +125,20 @@ ul li:last-child{
 
 
 
-
+.progression{
+  display: flex;
+}
+.progression div{
+  flex: 1;
+  margin-left: 5px;
+}
+.progression div:last-child{
+  margin-right: 5px;
+}
+.progression li{
+  display: flex;
+  justify-content: space-between;
+}
 
 
 
